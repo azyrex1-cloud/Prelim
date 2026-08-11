@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio</title>
+  <style>
+     html {
+     scroll-behavior: smooth;
+    scroll-padding-top: 70px; 
+    }
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      scroll-behavior: smooth;
+    }
+
+    header { 
+        background: #333; 
+        color: #fff; 
+      padding: 100px 20px 20px;
+        text-align: center; }
+
+    header h1 { 
+        margin: 0; }
+    #home {
+    text-align: center;
+    }
+    #home img {
+    display: block;
+    margin: 0 auto;
+    }
+
+    nav { 
+        background: #444; 
+        display: flex; 
+        justify-content: center; 
+        position: fixed;
+        top: 0; 
+        width: 100%; 
+        z-index: 1000;
+      }
+        
+
+    nav a { 
+        color: #fff; 
+        padding: 14px 20px; 
+        text-decoration: none; 
+        transition:.3s;
+    
+    }
+        
+
+    nav a:hover { 
+        background: #666; }
+
+    section { 
+      padding: 100px 50px; /* extra top padding */
+      min-height: 100vh;
+    }
+    .skills { 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 20px; }
+
+    .skill-card { 
+        flex: 1 1 200px; 
+        background: #f4f4f4; 
+        padding: 20px; 
+        border-radius: 8px; 
+        text-align: center; }
+    .gallery { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 15px; }
+
+    .gallery img { 
+        width: 150%; 
+        border-radius: 8px; 
+        transition: transform 0.3s; }
+
+    .gallery img:hover { 
+        transform: scale(1.05); }
+
+    form { 
+        max-width: 500px; 
+        margin: auto; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 10px; }
+
+    input, textarea { 
+        padding: 10px; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; }
+    img {
+    width: 200px;
+    height: 400px;
+    object-fit: cover; 
+    }
+    .pfp {
+    width: 200px;       
+    height: 200px;      
+    border-radius: 50%;  
+    object-fit: cover;
+    }
+
+    button { 
+        padding: 10px; 
+        border: none; 
+        background: #333; 
+        color: #fff; 
+        cursor: pointer; }
+
+    button:hover { 
+        background: #555; }
+
+    footer { 
+        background: #222; 
+        color: #fff; 
+        text-align: center; 
+        padding: 20px; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>FERNANDEZ, JOSEPH MARTINE E.</h1>
+    <p>BSIT  2 IT-B</p>
+    <p>"It’s a leap of faith."</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome</h2>
+  <img id="a" src="1.jpg" alt="Profile Picture" class="pfp">
+    <p>Hello! I am a BSIT student passionate about web technologies.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <h3>Personal Information:</h3>
+    <p>I am Fernandez, Joseph Martine E. but you can call me Jm</p>
+    <p>I currently live in  Pulo Cabuyao Laguna</p>
+    <h3>Educational Background:</h3>
+    <p>Graduated Senior highschool in CITI Global College Cabuyao under STEM strand in year 2024</p>
+    <h3>Career Goal:</h3>
+    <p>For now my primary goal is to finish college while at the same time knowing where I want to focus on in IT industry</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill-card"><h3>HTML</h3><p>Building structured web pages.</p></div>
+      <div class="skill-card"><h3>CSS</h3><p>Styling and responsive design.</p></div>
+      <div class="skill-card"><h3>Problem Solving</h3><p>Logical and creative solutions.</p></div>
+      <div class="skill-card"><h3>Teamwork</h3><p>Collaborating effectively.</p></div>
+      <div class="skill-card"><h3>Communication</h3><p>Clear and concise interaction.</p></div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <figure>
+      <img src="1.jpg" alt="Project 1">
+      <figcaption>Project 1</figcaption>
+      </figure>
+      <figure>
+      <img src="2.jpg" alt="Project 2">
+      <figcaption>Project 2</figcaption>
+      </figure>
+      <figure>
+      <img src="3.jpg" alt="Project 3">
+      <figcaption>Project 3</figcaption>
+      </figure>
+      <figure>
+      <img src="4.jpg" alt="Project 4">
+      <figcaption>Project 4</figcaption>
+      </figure>
+      <figure>  
+      <img src="5.webp" alt="Project 5">
+      <figcaption>Project 5</figcaption>
+      </figure>
+      <figure>
+      <img src="6.png" alt="Project 6">
+      <figcaption>Project 6</figcaption>
+      </figure>
+      <figure>
+      <img src="5.jpg" alt="Project 7">
+      <figcaption>Project 7</figcaption>
+      </figure>
+      <figure>
+      <img src="6.jpg" alt="Project 8">
+      <figcaption>Project 8</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>FERNANDEZ, JOSEPH MARTINE E. | Section 2 IT-B</p>
+    <p>&copy; 2026 Student Portfolio</p>
+    <p>
+      <a href="https://www.facebook.com/jmfrndzz">Facebook</a> | 
+      <a href="https://www.instagram.com/jmfrnndz_/">Tnstagram</a> | 
+      <a href="https://www.tiktok.com/@zryx.z?lang=en">Tiktok</a>
+    </p>
+  </footer>
+
+</body>
+</html>
